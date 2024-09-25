@@ -11,6 +11,7 @@ namespace Teszt
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Vilag");
+            Console.WriteLine("Szia");
             Console.ReadKey();
         }
     }
