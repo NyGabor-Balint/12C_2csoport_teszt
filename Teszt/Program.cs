@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Teszt
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+     public   static void Main()
         {
             Console.WriteLine("Hello Vilag");
-            Console.WriteLine("Szia");
+            
             Console.ReadKey();
         }
     }
