@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teszt", "Teszt\Teszt.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teszt_Unitteszt", "unitteszt\Teszt_Unitteszt.csproj", "{BCFF6232-2BD0-44EE-9BF2-982C2EA35823}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korhenger", "Korhenger\Korhenger.csproj", "{4D8E1FCC-F6F2-4304-8BC7-085125ACF4DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BCFF6232-2BD0-44EE-9BF2-982C2EA35823}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCFF6232-2BD0-44EE-9BF2-982C2EA35823}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCFF6232-2BD0-44EE-9BF2-982C2EA35823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D8E1FCC-F6F2-4304-8BC7-085125ACF4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D8E1FCC-F6F2-4304-8BC7-085125ACF4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D8E1FCC-F6F2-4304-8BC7-085125ACF4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D8E1FCC-F6F2-4304-8BC7-085125ACF4DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
