@@ -6,7 +6,7 @@ namespace Körhenger_unitteszt
 
 {
     [TestClass]
-    public class Kör_Teszt
+    public class Kör_Teszt 
     {
         [TestMethod]
         public void TestMethod1()
