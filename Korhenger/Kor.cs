@@ -3,45 +3,83 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
- 
- 
-namespace korhenger
+
+namespace KörHenger
+
 {
-    public class kor
+
+    class Kör
     {
-        private double sugar;
-        private double terulet;
-        private double kerulet;
- 
-        public kor() { }
-        public kor(double r) {
-            sugar = r;
-                }
-        public void SetSugar (double r)
+        protected double sugar,
+            terület,
+            kerület;
+        public Kör() { }
+        public Kör(double r)
         {
-            sugar = r;
-        }
-        public void SetTerulet()
+            if (r <= 0)
             {
-            this.terulet = Math.Pow(this.sugar, 2) * Math.PI;
- 
+                throw new ArgumentException("A kör sugarának nagyobbnak kell lenni mint 0");
+            }
+            else this.sugar = r;
         }
-        public void SetKerulet()
+        public void SetSugar(double r)
         {
-            this.kerulet = 2* this.sugar     * Math.PI;
- 
+            if (r <= 0)
+            {
+                throw new ArgumentException("A kör sugarának nagyobbnak kell lenni mint 0");
+            }
+            else this.sugar = r;
         }
-        public double GetTerulet()
+
+        public void SetTerület()
         {
-            return this.terulet;
+            this.terület = Math.Round(Math.Pow(this.sugar, 2) * Math.PI, 2);
         }
-        public double GetKerulet()
+        public void SetKerület()
         {
-            return this.kerulet;
+            this.kerület = Math.Round(2 * this.sugar * Math.PI, 2);
         }
-        public double GetSugar()
+        public double GetTerület()
+        {
+            return this.terület;
+        }
+        public double GetKerület()
+        {
+            return this.kerület;
+        }
+        public double GetSugár()
         {
             return this.sugar;
+        }
+    }
+    class Henger : Kör
+    {
+        // Osztályváltozók
+        private double térfogat,
+            magasság;
+        // Konstruktor
+        public Henger(double s, double m)
+
+        {
+            if (s <= 0 || m <= 0)
+            {
+                throw new ArgumentException("A henger sugara és magasságanak nem lehet  0 kisebb!");
+            }
+            else
+            {
+                this.sugar = s;
+                this.magasság = m;
+            }
+            // Változók beállítása
+            // Számítások elvégzése
+            SetKerület();
+            SetTerület();
+            this.térfogat = this.terület * this.magasság;
+        }
+
+        public double GetTérfogat()
+        {
+            return this.térfogat;
         }
     }
 }
