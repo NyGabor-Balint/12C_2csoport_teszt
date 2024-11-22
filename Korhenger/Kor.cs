@@ -3,31 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Korhenger
+ 
+ 
+namespace korhenger
 {
-    class Kor
+    public class kor
     {
-        private double sugar, terulet, kerulet;
-        public Kor()
-        {
-
-        }
-        public Kor(double r)
+        private double sugar;
+        private double terulet;
+        private double kerulet;
+ 
+        public kor() { }
+        public kor(double r) {
+            sugar = r;
+                }
+        public void SetSugar (double r)
         {
             sugar = r;
         }
-        public void SetSugar(double r)
-        {
-            this.sugar = r;
-        }
         public void SetTerulet()
-        {
-            this.terulet = Math.Round(Math.Pow(this.sugar, 2) * Math.PI);
+            {
+            this.terulet = Math.Pow(this.sugar, 2) * Math.PI;
+ 
         }
         public void SetKerulet()
         {
-            this.kerulet = Math.Round(2 * this.sugar * Math.PI);
+            this.kerulet = 2* this.sugar     * Math.PI;
+ 
         }
         public double GetTerulet()
         {
