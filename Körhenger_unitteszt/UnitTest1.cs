@@ -17,6 +17,7 @@ namespace korhengert
         [TestMethod]
         public void Terület_Teszt()
         {
+
         }
 
     }
