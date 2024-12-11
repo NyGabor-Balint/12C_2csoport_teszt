@@ -16,7 +16,7 @@ namespace KörHenger
         public Kör() { }
         public Kör(double r)
         { 
-            if (r <= 0)
+            if (r <= 0) 
             {
                 throw new ArgumentException("A kör sugarának nagyobbnak kell lenni mint 0");
             }
