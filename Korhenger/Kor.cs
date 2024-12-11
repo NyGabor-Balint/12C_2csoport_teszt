@@ -46,7 +46,7 @@ namespace KörHenger
         public double GetKerület()
         {
             return this.kerület;
-        }
+        } 
         public double GetSugár()
         {
             return this.sugar;
