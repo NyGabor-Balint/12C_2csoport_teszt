@@ -12,7 +12,7 @@ namespace Teszt
         {
             Console.WriteLine("Hello Vilag");
             
-            Console.ReadKey();
+          //  Console.ReadKey();
         }
     }
 }
