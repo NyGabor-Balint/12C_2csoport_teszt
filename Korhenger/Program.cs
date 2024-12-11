@@ -22,7 +22,7 @@ namespace KörHenger
             k2.SetTerület();
             kiír(k2);
             // 1. Henger
-            try
+            try 
             {
                 Henger h1 = new Henger(15, 34);
                 kiírHenger(h1);
