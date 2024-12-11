@@ -23,7 +23,7 @@ namespace KörHenger
             else this.sugar = r;
         }
         public void SetSugar(double r)
-        {
+        { 
             if (r <= 0)
             {
                 throw new ArgumentException("A kör sugarának nagyobbnak kell lenni mint 0");
