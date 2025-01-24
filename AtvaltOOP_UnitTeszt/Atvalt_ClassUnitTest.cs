@@ -25,17 +25,20 @@ namespace AtvaltOOP_UnitTeszt
 
            
         }
-        public void isBinaris_True() // A tesztmetodus nevében jelzem, hoyg melyik metodust tesztelem és mire
+        [TestMethod]
+        public void isDecimal_False() // A tesztmetodus nevében jelzem, hoyg melyik metodust tesztelem és mire
         {
-            string szoveg1 = "21";
-            bool vartEredm1 = true, kapottEredm1 = false;
+            // Arrange- Tesztkörnyezet beállítása
+            string szoveg = "k";
+            bool vartEredm = false, kapottEredm = false;
             // Act- A vizsgált metódus végrehajtása
-            kapottEredm1 = atvalt.isBinaris(szoveg1);
+            kapottEredm = atvalt.isDecimal(szoveg);
             // Act- Az eredmény kiértékelése
-            Assert.AreEqual(kapottEredm1, vartEredm1);
+            Assert.AreEqual(kapottEredm, vartEredm);
 
 
         }
-       
+
+
     }
 }
