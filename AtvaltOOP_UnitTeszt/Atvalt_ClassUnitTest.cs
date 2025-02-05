@@ -73,7 +73,7 @@ namespace AtvaltOOP_UnitTeszt
             //Act a vizsgát metodus vegrehajtasa
         kapottEredm=atvalt.isDecimal(szoveg);
 
-            //Assert-Az eredmeny kiértékelése
+            //Assert-Az eredmeny kiértékelése 
             Assert.AreEqual(kapottEredm, vartEredm);
         
         }
