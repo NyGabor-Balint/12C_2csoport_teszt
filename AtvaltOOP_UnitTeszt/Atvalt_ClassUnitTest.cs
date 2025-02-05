@@ -23,7 +23,7 @@ namespace AtvaltOOP_UnitTeszt
             // Act- Az eredmény kiértékelése
             Assert.AreEqual(kapottEredm, vartEredm);
 
-           
+
         }
         [TestMethod]
         public void isDecimal_False() // A tesztmetodus nevében jelzem, hoyg melyik metodust tesztelem és mire
@@ -62,6 +62,57 @@ namespace AtvaltOOP_UnitTeszt
 
 
         }
+        [TestMethod]
 
+        // Arrange-Tesztkörnyezet beállitása
+        public void isDecimal_False2() { 
+            string szoveg = "0110";
+            bool vartEredm = false,
+                kapottEredm = false; 
+
+            //Act a vizsgát metodus vegrehajtasa
+        kapottEredm=atvalt.isDecimal(szoveg);
+
+            //Assert-Az eredmeny kiértékelése
+            Assert.AreEqual(kapottEredm, vartEredm);
+        
+        }
+
+        [TestMethod]
+        public void isBinaris_True1() // A tesztmetodus nevében jelzem, hoyg melyik metodust tesztelem és mire
+        {
+            string szoveg2 = "0110";
+            bool vartEredm2 = true, kapottEredm2 = false;
+            // Act- A vizsgált metódus végrehajtása
+            kapottEredm2 = atvalt.isBinaris(szoveg2);
+            // Act- Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm2, vartEredm2);
+
+
+        }
+        [TestMethod]
+        public void isBinaris_False2() // A tesztmetodus nevében jelzem, hoyg melyik metodust tesztelem és mire
+        {
+            string szoveg3 = "xy";
+            bool vartEredm3 = false, kapottEredm3 = false;
+            // Act- A vizsgált metódus végrehajtása
+            kapottEredm3 = atvalt.isBinaris(szoveg3);
+            // Act- Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm3, vartEredm3);
+
+
+        }
+        [TestMethod]
+        public void isBinaris_False3() // A tesztmetodus nevében jelzem, hoyg melyik metodust tesztelem és mire
+        {
+            string szoveg3 = "110";
+            bool vartEredm3 = false, kapottEredm3 = false;
+            // Act- A vizsgált metódus végrehajtása
+            kapottEredm3 = atvalt.isBinaris(szoveg3);
+            // Act- Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm3, vartEredm3);
+
+
+        }
     }
 }
