@@ -123,7 +123,7 @@ namespace AtvaltOOP_UnitTeszt
             kapottEredm3 = atvalt.binariaToDecimalis(szoveg3);
             // Act- Az eredmény kiértékelése
             Assert.AreEqual(kapottEredm3, vartEredm3);
-
+             
 
         }
     }
