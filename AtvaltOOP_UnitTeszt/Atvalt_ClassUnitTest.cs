@@ -114,5 +114,17 @@ namespace AtvaltOOP_UnitTeszt
 
 
         }
+        [TestMethod]
+        public void BinarisToDecimalisis_False() // A tesztmetodus nevében jelzem, hoyg melyik metodust tesztelem és mire
+        {
+            string szoveg3 = "001010";
+            int vartEredm3 = 52, kapottEredm3 = 0;
+            // Act- A vizsgált metódus végrehajtása
+            kapottEredm3 = atvalt.binariaToDecimalis(szoveg3);
+            // Act- Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm3, vartEredm3);
+
+
+        }
     }
 }
