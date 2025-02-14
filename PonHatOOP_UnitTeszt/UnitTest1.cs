@@ -8,7 +8,7 @@ public class TestPontHat
     [Test]
     public void TestJoPontszamok()
     {
-        // Teszteljük a helyes pontszámokat és osztályzatokat
+        // Teszteljük a helyes pontszámokat és osztályzatokat 
         PontHat pont = new PontHat(95);
         Assert.AreEqual("Pontszám: 95, Osztályzat: 5", pont.Eredmeny());
 
