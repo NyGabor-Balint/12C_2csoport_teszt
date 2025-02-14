@@ -13,7 +13,7 @@ namespace UnitTest1
         [TestInitialize]
         public void Setup()
         {
-            pontHat = new PontHat();
+            pontHat = new PontHat(); 
         }
 
         // Határértékek tesztelése
