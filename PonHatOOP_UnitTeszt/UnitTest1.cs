@@ -8,7 +8,7 @@ public class TestPontHat
     [Test]
     public void TestJoPontszamok()
     {
-        // Teszteljük a helyes pontszámokat és osztályzatokat 
+        // Tesztelése a helyes pontszámoknak és az osztályzatoknak 
         PontHat pont = new PontHat(95);
         Assert.AreEqual("Pontszám: 95, Osztályzat: 5", pont.Eredmeny());
 
@@ -28,7 +28,7 @@ public class TestPontHat
     [Test]
     public void TestHatarErtekPontszamok()
     {
-        // Teszteljük a határértékeket
+        // Tesztelese a határértékeket
         PontHat pont = new PontHat(90);
         Assert.AreEqual("Pontszám: 90, Osztályzat: 5", pont.Eredmeny());
 
@@ -45,7 +45,7 @@ public class TestPontHat
     [Test]
     public void TestHibasPontszamok()
     {
-        // Teszteljük a hibás pontszámokat
+        // Tesztelése a hibás pontszámoknak
         Assert.ThrowsException<ArgumentOutOfRangeException>(() => new PontHat(-1));
         Assert.ThrowsException<ArgumentOutOfRangeException>(() => new PontHat(101));
 
