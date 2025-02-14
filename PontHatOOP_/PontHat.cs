@@ -19,7 +19,7 @@ namespace PontHatOOP_
         }
 
         // Pontszám beállítása
-        public void Beallitas(int pont)
+        public void Beallitas(int pont) 
         {
             if (pont < 0 || pont > 100)
             {
