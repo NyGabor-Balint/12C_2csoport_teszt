@@ -17,7 +17,7 @@ namespace KorTDD
         public KorClass( double r) {
             this.sugar = r;
         }
-        // Kerulet számitasa
+        // Kerulet számitasa 
         public double getKerulet(double r) { // return this.terulet = 2 * r * Math.PI; 
                                              // public double getSugar() { return sugar; }
             return 0.0; }
