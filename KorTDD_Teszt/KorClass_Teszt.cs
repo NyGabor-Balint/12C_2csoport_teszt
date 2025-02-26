@@ -7,11 +7,11 @@ namespace KorTDD_Teszt
 {
     [TestClass]
     public class KorClass_Teszt 
-
     {
         // Inicializaljuk a teszt kornyezetet
 
         KorClass kor= new KorClass(4.0);
+
         // Kerulet tesztelese
         [TestMethod]
         private void setKerulet_teszt_True()
@@ -26,8 +26,8 @@ namespace KorTDD_Teszt
             //Assert
             Assert.AreEqual(kapottEredm, vartEredm);
         }
-        [TestMethod]
 
+        [TestMethod]
         private void setKerulet_teszt_False_alatt()
         {
             // Arrange
@@ -38,10 +38,10 @@ namespace KorTDD_Teszt
             kapottEredm = kor.setKerulet(sugar);
 
             //Assert
-            Assert.AreEqual(kapottEredm, vartEredm);
+            Assert.AreNotEqual(kapottEredm, vartEredm);
         }
-        [TestMethod]
 
+        [TestMethod]
         private void setKerulet_teszt_False_felett()
         {
             // Arrange
@@ -52,10 +52,10 @@ namespace KorTDD_Teszt
             kapottEredm = kor.setKerulet(sugar);
 
             //Assert
-            Assert.AreEqual(kapottEredm, vartEredm);
+            Assert.AreNotEqual(kapottEredm, vartEredm);
         }
-        [TestMethod]
 
+        [TestMethod]
         private void setTerulet_teszt_True()
         {
             // Arrange
@@ -68,8 +68,8 @@ namespace KorTDD_Teszt
             //Assert
             Assert.AreEqual(kapottEredm, vartEredm);
         }
-        [TestMethod]
 
+        [TestMethod]
         private void setTerulet_teszt_False_alatt()
         {
             // Arrange
@@ -80,10 +80,10 @@ namespace KorTDD_Teszt
             kapottEredm = kor.setTerulet(sugar);
 
             //Assert
-            Assert.AreEqual(kapottEredm, vartEredm);
+            Assert.AreNotEqual(kapottEredm, vartEredm);
         }
-        [TestMethod]
 
+        [TestMethod]
         private void setTerulet_teszt_False_felett()
         {
             // Arrange
@@ -94,11 +94,8 @@ namespace KorTDD_Teszt
             kapottEredm = kor.setTerulet(sugar);
 
             //Assert
-            Assert.AreEqual(kapottEredm, vartEredm);
+            Assert.AreNotEqual(kapottEredm, vartEredm);
         }
-
-
-
 
     }
 }
