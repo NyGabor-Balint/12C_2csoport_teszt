@@ -10,7 +10,7 @@ namespace PonTavOOPTests
         {
             var pt = new PontTav(); // Alap konstruktor
             Assert.AreEqual(0.0, pt.GetTavolsag(), 0.0001); // Távolság = 0
-        }
+        } 
 
         [Test]
         public void KonstruktorKoordinatakkal_HelyesTavolsag()
